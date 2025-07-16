@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crop Circles Coloring Book Volume 1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Poppins:wght@400;600&display=swap');
+
+        :root {
+            --bg-grad-start: #3a506b;
+            --bg-grad-end: #1c2541;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text-primary: #e0e0e0;
+            --text-secondary: #b3cde0;
+            --accent-purple: #9b5de5;
+            --accent-green: #00f5d4;
+            --font-title: 'Lora', serif;
+            --font-body: 'Poppins', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            margin: 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--bg-grad-start), var(--bg-grad-end));
+            color: var(--text-primary);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: minmax(250px, 1fr) 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .book-cover img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .book-cover img:hover {
+            transform: scale(1.05);
+        }
+
+        .book-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-family: var(--font-title);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            font-style: italic;
+            text-align: left;
+            margin: 0 0 1rem 0;
+            color: #fff;
+            text-shadow: 0 0 15px var(--accent-purple);
+        }
+
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+            max-width: 90%;
+        }
+
+        .format-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-green);
+            color: #fff;
+        }
+
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .country-button {
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #000;
+            background: var(--accent-green);
+            font-weight: 600;
+            transition: all 0.2s ease-in-out;
+            border: none;
+            cursor: pointer;
+        }
+
+        .country-button:hover {
+            background: var(--accent-purple);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .anchor-link {
+            align-self: flex-start;
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            color: var(--accent-green);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .anchor-link:hover {
+            text-decoration: underline;
+            color: var(--accent-purple);
+        }
+
+        @media (max-width: 800px) {
+            body {
+                padding: 1rem;
+            }
+            .container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .book-cover {
+                max-width: 350px;
+                margin: 0 auto;
+            }
+            h1, .description, .anchor-link {
+                text-align: center;
+                max-width: 100%;
+                align-self: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/718dmBpsVzL._SY342_.jpg" alt="The Crop Circles Coloring Book Volume 1 Cover">
+        </div>
+        <div class="book-details">
+            <h1>The Crop Circles Coloring Book Volume 1</h1>
+            <p class="description">
+                Uncover the mystery of crop circles with this creative coloring journey. Perfect for all ages who love art and sacred geometry.
+            </p>
+
+            <div class="format-card">
+                <h2>Paperback</h2>
+                <div class="button-group">
+                    <a href="https://www.amazon.com/dp/B0BV4CRP7F" class="country-button" target="_blank">United States</a>
+                    <a href="https://www.amazon.co.uk/dp/B0BV4CRP7F" class="country-button" target="_blank">United Kingdom</a>
+                    <a href="https://www.amazon.de/dp/B0BV4CRP7F" class="country-button" target="_blank">Germany</a>
+                    <a href="https://www.amazon.fr/dp/B0BV4CRP7F" class="country-button" target="_blank">France</a>
+                    <a href="https://www.amazon.es/dp/B0BV4CRP7F" class="country-button" target="_blank">Spain</a>
+                    <a href="https://www.amazon.it/dp/B0BV4CRP7F" class="country-button" target="_blank">Italy</a>
+                    <a href="https://www.amazon.nl/dp/B0BV4CRP7F" class="country-button" target="_blank">Netherlands</a>
+                    <a href="https://www.amazon.pl/dp/B0BV4CRP7F" class="country-button" target="_blank">Poland</a>
+                    <a href="https://www.amazon.se/dp/B0BV4CRP7F" class="country-button" target="_blank">Sweden</a>
+                    <a href="https://www.amazon.co.jp/dp/B0BV4CRP7F" class="country-button" target="_blank">Japan</a>
+                    <a href="https://www.amazon.ca/dp/B0BV4CRP7F" class="country-button" target="_blank">Canada</a>
+                    <a href="https://www.amazon.com.au/dp/B0BV4CRP7F" class="country-button" target="_blank">Australia</a>
+                </div>
+            </div>
+
+            <div class="format-card">
+                <h2>Hardcover</h2>
+                <div class="button-group">
+                    <a href="https://www.amazon.com/dp/B0F8BV9MRX" class="country-button" target="_blank">United States</a>
+                    <a href="https://www.amazon.co.uk/dp/B0F8BV9MRX" class="country-button" target="_blank">United Kingdom</a>
+                    <a href="https://www.amazon.de/dp/B0F8BV9MRX" class="country-button" target="_blank">Germany</a>
+                    <a href="https://www.amazon.fr/dp/B0F8BV9MRX" class="country-button" target="_blank">France</a>
+                    <a href="https://www.amazon.es/dp/B0F8BV9MRX" class="country-button" target="_blank">Spain</a>
+                    <a href="https://www.amazon.it/dp/B0F8BV9MRX" class="country-button" target="_blank">Italy</a>
+                    <a href="https://www.amazon.nl/dp/B0F8BV9MRX" class="country-button" target="_blank">Netherlands</a>
+                    <a href="https://www.amazon.pl/dp/B0F8BV9MRX" class="country-button" target="_blank">Poland</a>
+                    <a href="https://www.amazon.se/dp/B0F8BV9MRX" class="country-button" target="_blank">Sweden</a>
+                </div>
+            </div>
+
+            <a href="https://www.amazon.com/dp/B0BV4CRP7F" class="anchor-link" target="_blank">The Crop Circles Coloring Book Volume 1</a>
+        </div>
+    </main>
+
+</body>
+</html>
